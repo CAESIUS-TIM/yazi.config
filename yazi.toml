@@ -228,3 +228,44 @@ sort_sensitive = false
 sort_reverse 	 = false
 sort_translit  = false
 
+# <https://github.com/yazi-rs/plugins/tree/main/piper.yazi>
+[[plugin.prepend_previewers]]
+name = "*.tar*"
+run  = 'piper --format=url -- tar tf "$1"'
+
+[[plugin.prepend_previewers]]
+name = "*.csv"
+# run  = 'piper -- bat -p --color=always "$1"'
+# HINT:
+# local child = Command("mlr")
+# 	:args({
+# 		"--icsv",
+# 		"--opprint",
+# 		"-C",
+# 		"--key-color",
+# 		"darkcyan",
+# 		"--value-color",
+# 		"grey70",
+# 		"cat",
+# 		tostring(job.file.url),
+# 	})
+run = 'piper -- mlr --icsv --opprint -C --key-color darkcyan --value-color grey70 cat "$1"'
+
+[[plugin.prepend_previewers]]
+name = "*.md"
+# NOTE: BAD COLOR
+# run  = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
+run  = 'piper -- mdcat --columns=$w "$1"'
+
+[[plugin.prepend_previewers]]
+name = "*/"
+run  = 'piper -- eza -TL=3 --color=always --icons=always --group-directories-first --no-quotes "$1"'
+
+[[plugin.append_previewers]]
+name = "*"
+run  = 'piper -- hexyl --border=none --terminal-width=$w "$1"'
+
+[[plugin.prepend_previewers]]
+mime = "application/bittorrent"
+run = 'piper -- transmission-show "$1"'
+
