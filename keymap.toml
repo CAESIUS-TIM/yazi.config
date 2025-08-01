@@ -367,3 +367,13 @@ keymap = [
 	{ on = "f", run = "filter", desc = "Filter help items" },
 ]
 
+# <https://github.com/yazi-rs/plugins/tree/main/toggle-pane.yazi>
+[[mgr.prepend_keymap]]
+on   = "T"
+run  = "plugin toggle-pane max-preview"
+desc = "Maximize or restore the preview pane"
+[[mgr.prepend_keymap]]
+on   = "<A-t>"
+run  = "plugin toggle-pane min-preview"
+desc = "Show or hide the preview pane"
+

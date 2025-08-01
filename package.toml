@@ -13,5 +13,10 @@ use = "ndtoan96/ouch"
 rev = "0742fff"
 hash = "8803b7801055d3d3a59c6f90ffb79a22"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "de53d90"
+hash = "e671ad6617800ea6adae1ede7930c105"
+
 [flavor]
 deps = []
