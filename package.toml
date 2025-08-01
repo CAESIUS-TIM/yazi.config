@@ -28,5 +28,10 @@ use = "imsi32/yatline"
 rev = "88bd1c5"
 hash = "6f8060c1dd330a68c64a033a0dd7533f"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "de53d90"
+hash = "311ae0f43071af72443a93e3f4e4612c"
+
 [flavor]
 deps = []

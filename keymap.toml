@@ -377,3 +377,8 @@ on   = "<A-t>"
 run  = "plugin toggle-pane min-preview"
 desc = "Show or hide the preview pane"
 
+# <https://github.com/yazi-rs/plugins/tree/main/smart-filter.yazi>
+[[mgr.prepend_keymap]]
+on   = "F"
+run  = "plugin smart-filter"
+desc = "Smart filter"
