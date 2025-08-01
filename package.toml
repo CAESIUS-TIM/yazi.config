@@ -23,5 +23,10 @@ use = "yazi-rs/plugins:git"
 rev = "de53d90"
 hash = "e65e6528de15012b5ccdead4ed26b8bd"
 
+[[plugin.deps]]
+use = "imsi32/yatline"
+rev = "88bd1c5"
+hash = "6f8060c1dd330a68c64a033a0dd7533f"
+
 [flavor]
 deps = []
