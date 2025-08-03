@@ -49,6 +49,11 @@ rev = "9fc8fe0"
 hash = "8621ef7eaab39e3cec4249b4f6261623"
 
 [[plugin.deps]]
+use = "Deepak22903/kdeconnect-send"
+rev = "bb5d4ab"
+hash = "27dc762f67f386d55a66820325cbeec4"
+
+[[plugin.deps]]
 use = "dedukun/bookmarks"
 rev = "9ef1254"
 hash = "fc77f2bd3aad78199fbe11b727b1954f"
