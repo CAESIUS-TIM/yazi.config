@@ -58,5 +58,10 @@ use = "dedukun/bookmarks"
 rev = "9ef1254"
 hash = "fc77f2bd3aad78199fbe11b727b1954f"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:diff"
+rev = "de53d90"
+hash = "5448aa1f30e5027951e9408eaf1f0482"
+
 [flavor]
 deps = []

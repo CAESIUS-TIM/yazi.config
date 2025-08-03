@@ -438,6 +438,12 @@ on   = [ "c", "k" ]
 run  = "plugin kdeconnect-send"
 desc = "Send selected files via KDE Connect"
 
+# yazi-rs/plugins:diff -> use `busybox diff`
+[[mgr.prepend_keymap]]
+on   = "<C-d>"
+run  = "plugin diff"
+desc = "Diff the selected with the hovered file"
+
 # <https://github.com/dedukun/bookmarks.yazi>
 # If your yazi version is lower than v25.5.28, repleace "mgr" by "manager".
 [[mgr.prepend_keymap]]
