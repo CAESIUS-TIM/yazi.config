@@ -44,6 +44,11 @@ rev = "c4f03df"
 hash = "21d3b0037be32671c7995a31bc0e0228"
 
 [[plugin.deps]]
+use = "KKV9/compress"
+rev = "9fc8fe0"
+hash = "8621ef7eaab39e3cec4249b4f6261623"
+
+[[plugin.deps]]
 use = "dedukun/bookmarks"
 rev = "9ef1254"
 hash = "fc77f2bd3aad78199fbe11b727b1954f"
