@@ -390,6 +390,12 @@ on = [ "c", "x" ]
 run = ["plugin copy-file-contents"]
 desc = "Copy contents of file"
 
+# <https://github.com/orhnk/system-clipboard.yazi?tab=readme-ov-file>
+[[mgr.prepend_keymap]]
+on = [ "c", "X" ]
+run = ["plugin system-clipboard"]
+desc = "Copy into system clipboard"
+
 # <https://github.com/aresler/path-from-root.yazi>
 [[mgr.prepend_keymap]]
 on = [ "c", "r" ]

@@ -39,6 +39,11 @@ rev = "71545f4"
 hash = "8ce41b1c2a3676030026211fd67d38cd"
 
 [[plugin.deps]]
+use = "orhnk/system-clipboard"
+rev = "4f6942d"
+hash = "aadfb1b78b364a1b03ac53cd52467834"
+
+[[plugin.deps]]
 use = "aresler/path-from-root"
 rev = "c4f03df"
 hash = "21d3b0037be32671c7995a31bc0e0228"
